@@ -4,6 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "vue:2": "vue-demi-switch 2",
+    "vue:2.7": "vue-demi-switch 2.7",
+    "vue:3": "vue-demi-switch 3",
+    "dev:vue2": "pnpm run vue:2 && pnpm -F test-project run dev",
+    "dev:vue3": "pnpm run vue:2 && pnpm -F test-project run dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -12,5 +17,11 @@
   "devDependencies": {
     "@kit-repo/eslint-config": "^0.38.8",
     "eslint": "^8.40.0"
+  },
+  "peerDependencies": {
+    "@vue/composition-api": "^1.7.1"
+  },
+  "dependencies": {
+    "vue-demi": "latest"
   }
 }
